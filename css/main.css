@@ -1,21 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Sarala:wght@400;700&display=swap');
 
 /* Set custom variables here */
+:root {
+      --dd-green: #2e483a; 
+      --dd-dark-green: #091e04;
+      --dd-cream: #f6f3ef; 
+      --dd-black: #000;
+   
+   --bs-primary: var(--dd-green); 
+   --bs-primary-rgb: 17, 54, 9;
+   --bs-light: var(--dd-cream);
+   --bs-light-rgb: 246, 243, 239; 
+   --bs-body-font-family: "Sarala regular", sans-serif;
+   --bs-body-color: var(--dd-black);
+   --bs-body-color-rgb: 0, 0, 0;
+   --bs-link-hover-color-rbg: 11, 37, 6;
+   --bs-tertiary-bg: var(--dd-green);
+    --bs-tertiary-bg-rgb: 17, 54, 9;
+    }
+      
+      /* Bootstrap overrides (including -rgb versions) */
+   
 
-
-
+.btn-primary {
+  --bs-btn-bg: var(--dd-green);
+  --bs-btn-border-color: var(--dd-green);
+  --bs-btn-hover-bg: var(--dd-dark-green);
+  --bs-btn-hover-border-colour: var(--dd-dark-green);
+  --bs-btn-active-border-color: var(--dd-dark-green);
+  color: #f6f3ef;
+}
 
 
 .navbar-brand {
-  color: #F6F3ED;
+      font-family:"Sarala regular", sans-serif;
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--dd-cream);
 }
 
 body {
-  font-family: "Sarala", sans-serif;
+ font-family: "Sarala regular", sans-serif;
 }
 
 h1, h2, h3 {
   font-family: "Merriweather", serif;
+  font-weight: 700;
 }
 
 #hero {
@@ -31,7 +61,7 @@ h1, h2, h3 {
   height: 800px;
 }
 
-#cta {
+#cta-banner {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cta-bg.png');
   background-repeat: no-repeat;
   background-position: center;
